@@ -6,7 +6,9 @@ function loadQuotes() {
 loadQuotes();
 function displayQuotes(quotes) {
     const section = document.getElementById('quote');
-    const quote = document.createElement('p');
-    quote.innerHTML = quotes;
+    for(const quote of quotes) {
+    const quote1 = document.createElement('p');
+    quote1.innerHTML = quote;
     section.appendChild(quote);
+    }
 }
