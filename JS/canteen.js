@@ -7,3 +7,10 @@ const searchFood = () =>{
        .then(response => response.json())
        .then(data => console.log(data.meals));   
 }
+const input = document.getElementById("search-field");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+});
