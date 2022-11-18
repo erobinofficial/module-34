@@ -5,6 +5,5 @@ const searchFood = () =>{
     searchBox.value = '';
     fetch(url)
        .then(response => response.json())
-       .then(data => console.log(data))
-    
+       .then(data => console.log(data.meals));   
 }
